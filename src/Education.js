@@ -1,15 +1,15 @@
-const Education = () => {
+const Education = ({ state: { education : { institution, degree, YOP, grade, stream} }}) => {
   return (
     <div className="section education">
       <h2 className="heading">EDUCATION</h2>
       <div className="content">
         <h4 className="subheading duration">
-          <div>Bachelor of Technology, CSE</div>
-          <div>2017-2021</div>
+          <div>{degree}, {stream}</div>
+          <div>{YOP}</div>
         </h4>
         <h5 className="subheading2 location">
-          <div>LNCTS</div>
-          <div>CGPA</div>
+          <div>{institution}</div>
+          <div>{grade}</div>
         </h5>
       </div>
     </div>

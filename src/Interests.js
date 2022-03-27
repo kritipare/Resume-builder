@@ -1,11 +1,9 @@
-const Interests = () => {
+const Interests = ({ state }) => {
   return (
     <div className="section interests">
       <h2 className="heading">Interests</h2>
       <div className="wrapper">
-        <li>Writing</li>
-        <li>Singing</li>
-        <li>Listening to Music</li>
+        {state.interests.split(',').filter(interest => interest.trim().length).map(interest => <li>{interest}</li>)}
       </div>
     </div>
   );

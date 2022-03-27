@@ -1,18 +1,16 @@
 import { useState } from "react";
 
-const PersonalDetails = ({ fname }) => {
-//   const [fname, setfName] = useState("John");
-  const [lname, setLName] = useState("Doe");
+const PersonalDetails = ({ state }) => {
   return (
     <>
       <div>
         <h1 className="heading">
-          {fname} {lname}
+          {state.fname} {state.lname}
         </h1>
       </div>
       <div className="contact-details">
-        <div>12345678</div>|<div>johndoe@example.com</div>|<div>Linkedin</div>|
-        <div>Website</div>
+        <div>{state.phone}</div>|<div>{state.email}</div>|<div>{state.linkedin}</div>|
+        <div>{state.website}</div>
       </div>
     </>
   );
