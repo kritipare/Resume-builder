@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/resume-builder/static/css/main.d62b1605.css",
+    "main.js": "/resume-builder/static/js/main.af6c9029.js",
+    "index.html": "/resume-builder/index.html",
+    "main.d62b1605.css.map": "/resume-builder/static/css/main.d62b1605.css.map",
+    "main.af6c9029.js.map": "/resume-builder/static/js/main.af6c9029.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d62b1605.css",
+    "static/js/main.af6c9029.js"
+  ]
+}
