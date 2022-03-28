@@ -61,7 +61,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          <img src="/Header.png" alt="Resume Builder" />
+          <img src="https://raw.githubusercontent.com/kritipare/Resume-builder/b3827982d4246c2a78f53f6608a0fb7aecb5b22a/public/Header.png" alt="Resume Builder" />
         </p>
       </header>
       <div className="body">
