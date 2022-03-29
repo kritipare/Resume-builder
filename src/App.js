@@ -44,15 +44,29 @@ function App() {
         }
 
         case "experience": {
-          setInitialState({
-            ...state,
-            [input]: { ...state[input], [input2]: e.target.value },
-          });
+          switch (input2) {
+            case "details": {
+              let detailsClone = state.experience.details;
+              detailsClone[index] = e.target.value;
+              setInitialState({
+                ...state,
+                [input]: { ...state[input], details: detailsClone },
+              });
+              break;
+            }
+            default: {
+              setInitialState({
+                ...state,
+                [input]: { ...state[input], [input2]: e.target.value },
+              });
+              break;
+            }
+          }
           break;
         }
-
         default: {
           setInitialState({ ...state, [input]: e.target.value });
+          break;
         }
       }
     };
@@ -61,7 +75,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          <img src="https://raw.githubusercontent.com/kritipare/Resume-builder/b3827982d4246c2a78f53f6608a0fb7aecb5b22a/public/Header.png" alt="Resume Builder" />
+          <img
+            src="https://raw.githubusercontent.com/kritipare/Resume-builder/b3827982d4246c2a78f53f6608a0fb7aecb5b22a/public/Header.png"
+            alt="Resume Builder"
+          />
         </p>
       </header>
       <div className="body">
